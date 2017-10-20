@@ -1,12 +1,11 @@
 
 
-<div class="formsize">
+<div class="center formsize">
   <%= simple_form_for @list do |f| %>
   <%= f.input :name, label: 'Category Name:', :label_html => { :class => 'formfont' } %>
-</div>
   <%= f.button :submit, "Create List" %>
   <% end %>
-
+</div>
 <br>
 <table>
   <tbody>
