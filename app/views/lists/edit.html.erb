@@ -1,15 +1,16 @@
-<h1>Lists#edit</h1>
-<p>Find me in app/views/lists/edit.html.erb</p>
+<div class="jumbotron">
+<div class="formwidth">
+<div class="text-center lead"><h3><a1> EDIT BOOK NAME </a1></div>
 
-<a1> EDIT </a1>
-
-
+<CENTER>
 <%= simple_form_for @list do |f| %>
-<%= f.input :name, label: 'Name:' %><br>
+<%= f.input :name, label: '-' %>
 <%= f.button :submit %>
+</center>
 
 <% end %>
 
 <br>
-<H3><%= link_to 'BACK HOME', lists_path %></H3>
+<div class="text-center lead"><H3><%= link_to 'BACK HOME', lists_path %></H3></div>
+</div>
 </div>

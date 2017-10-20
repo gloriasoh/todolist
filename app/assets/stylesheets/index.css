@@ -1,5 +1,5 @@
 body {
-  background-image: url("");
+  background-image: url("background.png");
   background-repeat: no-repeat;
   height: 100%;
 }
@@ -38,9 +38,8 @@ a:active {
 
 .formsize {
   width: 300px;
-  display: inline-block;
   text-align: center;
-  margin: 20px 300px;
+  margin: 0px auto;
 
 }
 .formplacing {

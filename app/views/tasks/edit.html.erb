@@ -1,18 +1,18 @@
-<h1>Lists#edit</h1>
-<p>Find me in app/views/lists/edit.html.erb</p>
-
-<a1> EDIT </a1>
+<div class="jumbotron">
+<div class="formwidth">
+<div class="text-center lead"><h3><a1> EDIT TASK NAME </a1></div>
 
 
 <%= simple_form_for [@list, @task] do |f| %>
 <%= f.input :name, label: 'Name' %><br>
 <%= f.input :descriptions, label: 'Description' %><br>
-<%= f.input :status, label: 'Status' %><br>
+<%= f.collection_radio_buttons :status, [['INCOMPLETE', 'Incomplete'] ,['IN PROGRESS', 'In Progress'], ['COMPLETED', 'Completed']], :first, :last %><br>
 <%= f.input :date, label: 'Due' %><br>
 
 <%= f.button :submit %>
 <% end %>
 
 <br>
-<H3><%= link_to 'BACK HOME', lists_path %></H3>
+<div class="text-center lead"><H3><%= link_to 'BACK HOME', lists_path %></H3></div>
 </div>
+</DIV>

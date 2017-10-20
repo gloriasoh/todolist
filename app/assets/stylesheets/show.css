@@ -1,6 +1,6 @@
 .formwidth {
-  width: 100%;
-  text-align: center;
+  width: 30%;
+  margin: 0px auto;
 }
 
 .task-title {
@@ -9,4 +9,24 @@
 
 .statusfont {
   size: 10px;
+}
+
+.formcolor {
+  font-family: 'Dancing Script', cursive;
+  color: black;
+}
+
+.jumbocolor {
+  background-color: #ededed;
+}
+
+.lead {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+
+}
+
+.title {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
 }
