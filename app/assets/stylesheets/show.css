@@ -1,0 +1,12 @@
+.formwidth {
+  width: 100%;
+  text-align: center;
+}
+
+.task-title {
+  color: black;
+}
+
+.statusfont {
+  size: 10px;
+}
