@@ -1,0 +1,59 @@
+body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.cardcolour {
+  border-radius: 25px;
+  background-color: white; background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px; auto;
+}
+
+.cardfont {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+/* unvisited link */
+a:link {
+   color: black;
+}
+
+/* visited link */
+a:visited {
+   color: black;
+}
+
+/* mouse over link */
+a:hover {
+   color: hotpink;
+}
+
+/* selected link */
+a:active {
+   color: white;
+}
+
+.formsize {
+  width: 300px;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 300px;
+
+}
+.formplacing {
+  margin: 20px auto;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.formfont {
+  font-size: 30px;
+  font-family: 'Cinzel', serif;
+}
+
+input {
+  margin-left: 10px; }

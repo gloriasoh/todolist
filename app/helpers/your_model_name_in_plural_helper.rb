@@ -1,0 +1,2 @@
+module YourModelNameInPluralHelper
+end

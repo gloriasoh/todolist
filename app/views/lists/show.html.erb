@@ -1,0 +1,87 @@
+<h1>Lists#show</h1>
+<p>Find me in app/views/lists/show.html.erb</p>
+
+<a1>DETAILS</a1><br>
+Title: <%= @list.name %><br><br>
+
+<h3>Task</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Due date</th>
+      <th colspan="4"></th>
+    </tr>
+    </div>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+
+    <tr>
+    <td><%= task.name %></td>
+    <td><%= task.descriptions %></td>
+    <td><%= task.status %></td>
+    <td><%= task.date %></td>
+
+      <td><%= link_to 'Edit', edit_list_task_path(@list,task), { class: "badge badge-light" } %></td>
+      <td><%= link_to 'Delete', list_task_path(@list,task), method: :delete, data: { confirm: 'Are you sure?' },  class: "badge badge-light"%></td>
+      </tr>
+
+    <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </tbody>
+  </table>
+
+<h3>Add Task</h3>
+<%= simple_form_for [@list, @task] do |f| %>
+<%= f.input :name, label: 'Name' %><br>
+<%= f.input :descriptions, label: 'Description' %><br>
+<%= f.label :status %>
+<%= f.collection_radio_buttons :status, [['incomplete', 'Incomplete'] ,['in progress', 'In Progress'], ['completed', 'Completed']], :first, :last %><br>
+<%= f.input :date, label: 'Due' %>
+
+
+<%= f.button :submit %>
+<% end %>
+<%= flash[:notice] %>
+<%= flash[:alert] %>
+
+
+<br><br>
+<h3><%= link_to 'BACK HOME', lists_path %></h3>
+</div>
